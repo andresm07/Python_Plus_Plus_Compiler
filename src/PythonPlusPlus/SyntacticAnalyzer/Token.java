@@ -66,75 +66,79 @@ public final class Token extends Object{
     
     // Reserved words - must be in alphabetical order ...
     
-    public static final int ARRAY = 4;
-    public static final int BEGIN = 5;
-    public static final int CONST = 6;
-    public static final int DO = 7;
-    public static final int ELSE = 8;
-    public static final int END = 9;
-    public static final int FUNC = 10;
-    public static final int IF = 11;
-    public static final int IN = 12;
-    public static final int LET = 13;
-    public static final int OF = 14;
-    public static final int PROC = 15;
-    public static final int RECORD = 16;
-    public static final int THEN = 17;
-    public static final int TYPE = 18;
-    public static final int VAR = 19;
-    public static final int WHILE = 20;
+    public static final int AND = 4;
+    public static final int BOOLEAN = 5;
+    public static final int BREAK = 6;
+    public static final int CHAR = 7;
+    public static final int CONTINUE = 8;
+    public static final int DEF = 9;
+    public static final int ELIF = 10;
+    public static final int ELSE = 11;
+    public static final int EXCEPT = 12;
+    public static final int FINALLY = 13;
+    public static final int FLOAT = 14;
+    public static final int FOR = 15;
+    public static final int IF = 16;
+    public static final int IN = 17;
+    public static final int INT = 18;
+    public static final int NOT = 19;
+    public static final int OR = 20;
+    public static final int PASS = 21;
+    public static final int PRINT = 22;
+    public static final int RETURN = 23;
+    public static final int STRING = 24;
+    public static final int TRY = 25;
+    public static final int WHILE = 26;
     
     // Punctuation ...
     
-    public static final int DOT = 21;
-    public static final int COLON = 22;
-    public static final int SEMICOLON = 23;
-    public static final int COMMA = 24;
-    public static final int BECOMES = 25;
-    public static final int IS = 26;
+    public static final int DOT = 27;
+    public static final int COLON = 28;
+    public static final int COMMA = 29;
     
     // Brackets ...
     
-    public static final int LPAREN = 27;
-    public static final int RPAREN = 28;
-    public static final int LBRACKET = 29;
-    public static final int RBRACKET = 30;
-    public static final int LCURLY = 31;
-    public static final int RCURLY = 32;
+    public static final int LPAREN = 30;
+    public static final int RPAREN = 31;
+    public static final int LBRACKET = 32;
+    public static final int RBRACKET = 33;
     
     // Special tokens ...
     
-    public static final int EOT = 33;
-    public static final int ERROR = 34;
+    public static final int EOT = 34;
+    public static final int ERROR = 35;
     
     private static String[] tokenTable = new String[] {
         "<int>",
         "<char>",
         "<identifier>",
         "<operator>",
-        "array",
-        "begin",
-        "const",
-        "do",
+        "and",
+        "boolean",
+        "break",
+        "char",
+        "continue",
+        "def",
+        "elif",
         "else",
-        "end",
-        "func",
+        "except",
+        "finally",
+        "float",
+        "for",
         "if",
         "in",
-        "let",
-        "of",
-        "proc",
-        "record",
-        "then",
-        "type",
-        "var",
+        "int",
+        "not",
+        "or",
+        "pass",
+        "print",
+        "return",
+        "string",
+        "try",
         "while",
         ".",
         ":",
-        ";",
         ",",
-        ":=",
-        "~",
         "(",
         ")",
         "[",
@@ -145,6 +149,6 @@ public final class Token extends Object{
         "<error>"
     };
     
-    private final static int firstReservedWord = Token.ARRAY;
+    private final static int firstReservedWord = Token.AND;
     private final static int lasReservedWord = Token.WHILE;
 }
